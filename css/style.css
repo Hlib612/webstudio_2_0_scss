@@ -1,14 +1,24 @@
+
+:root {
+    --background-color:#2F303A ;  
+    --main-color:rgb(255, 255, 255);
+    --text-color:#757575;
+    --focus-color:#2196F3;
+}
 .hero{
-    background-color:#2F303A ;
+    background-color:#2F303A;
 }
 footer{
-    background-color:#2F303A ;
+    background-color:#2F303A;
 }
 h1+button{
     color: rgb(255, 255, 255);
-    background-color: #2196F3;
+    background-color:#2196F3;
 
 }
 .h1{
     color: rgb(255, 255, 255);
+}
+p{
+    color: #757575;
 }
