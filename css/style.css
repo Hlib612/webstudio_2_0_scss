@@ -4,3 +4,8 @@
 footer{
     background-color:#2F303A ;
 }
+h1+button{
+    color: rgb(255, 255, 255);
+    background-color: #2196F3;
+
+}
