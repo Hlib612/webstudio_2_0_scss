@@ -7,6 +7,7 @@
 }
 body{
   font-family: "Roboto", sans-serif;
+  color: rgb(255, 255, 255);
 }
 .hero{
     background-color:#2F303A;
@@ -54,4 +55,8 @@ p{
   h2 {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
+  }
+  .portfolio-button_list-item-button{
+    color: rgb(255, 255, 255);
+    background-color:#2196F3;
   }
