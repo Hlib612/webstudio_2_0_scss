@@ -11,11 +11,39 @@ body{
   font-size: 14px;
 letter-spacing: 0.03em;
 }
+h1, h2, h3, h4, p {
+  margin: 0;
+  }
+  
+  ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  }
+
+  address {
+  font-style: normal;
+  }
+.container{
+  width: 1200px;
+  padding: 0 15px;
+  outline: 2px dashed red;
+  margin: 0 auto;
+}
+.header{
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .hero{
     background-color:var(--background-color);
+    padding-top: 200px;
+padding-bottom: 200px;
+text-align: center;
 }
 footer{
     background-color:var(--background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .hero-title{
 font-weight: 900;
@@ -23,6 +51,7 @@ font-size: 44px;
 line-height: 136%;
 letter-spacing: 0.06em;
   color:var(--main-color);
+  margin-bottom: 30px;
 }
 p{
     color:var(--text-color);
@@ -44,6 +73,8 @@ p{
   font-weight: 700;
   font-size: 26px;
   color: white;
+  display: inline-block;
+  margin-bottom: 20px;
   }
   .logo-footer-span{
     color:var(--focus-color);
@@ -62,6 +93,9 @@ h3{
     font-weight: 700;
     color: rgb(255, 255, 255);
     background-color:#2196F3;
+    padding: 10px 32px;
+    min-width: 216px;
+    border: 0;
   }
   .navigation-list{
     font-weight: 500;
@@ -78,6 +112,7 @@ cursor: pointer;
   }
   .portfolio-button_list-item-button{
     background-color:#F5F4FA;
+    border: 0;
   }
 .portfolio-button_list-item-button:hover{
   background-color:var(--focus-color);
@@ -102,3 +137,31 @@ cursor: pointer;
   .advertising-list-description{
     font-size: 16px;
   }
+  .features{
+padding-top: 94px;
+  }
+  .employees-list-item-title{
+margin-bottom: 10px;
+  }
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.employees{
+  text-align: center;
+}
+.img_title{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.team{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.team-list-name{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.team-list-img{
+  margin-bottom: 30px;
+}
