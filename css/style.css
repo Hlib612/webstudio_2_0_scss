@@ -113,6 +113,7 @@ cursor: pointer;
   .portfolio-button_list-item-button{
     background-color:#F5F4FA;
     border: 0;
+    padding: 6px 25px;
   }
 .portfolio-button_list-item-button:hover{
   background-color:var(--focus-color);
@@ -149,6 +150,7 @@ margin-bottom: 10px;
 }
 .employees{
   text-align: center;
+  color: white;
 }
 .img_title{
   text-align: center;
@@ -173,4 +175,35 @@ margin-bottom: 10px;
 }
 .address-list-item{
 color: #757575;
+}
+.employees-list{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.img_title-list{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.team-list{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.advertising-list{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap
+}
+.portfolio-title-button_list{
+  display: flex;
+  flex-direction: row;
+  gap: 33px;
+  justify-content: center;
+  margin-bottom: 56px;
+}
+.portfolio-title{
+  color: white;
 }
