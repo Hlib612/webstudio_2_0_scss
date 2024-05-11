@@ -18,9 +18,19 @@ h1, h2, h3, h4, p {
     padding-top: 71px;
     padding-bottom: 123px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
     gap: 12px;
+  }
+  .navigation-list{
+    display: flex;
+    flex-direction: row;
+    margin-left:  auto;
+  }
+  .address-list{
+    display: flex;
+    margin-left:  auto;
+  }
+  .navigation{
+    display: flex;
   }
   
   ul {
