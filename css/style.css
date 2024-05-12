@@ -24,12 +24,19 @@ h1, h2, h3, h4, p {
     display: flex;
     flex-direction: row;
     margin-left:  auto;
+    gap: 50px;
+    align-items: center;
   }
   .address-list{
     display: flex;
     margin-left:  auto;
+    gap: 50px;
+    align-items: center;
   }
   .navigation{
+    display: flex;
+  }
+  .flex{
     display: flex;
   }
   
@@ -81,6 +88,7 @@ p{
   font-weight: 700;
   font-size: 26px;
   color: black;
+  margin-right: 93px;
 }
 .logo-header-span{
   color:var(--focus-color);
@@ -132,6 +140,8 @@ cursor: pointer;
     background-color:#F5F4FA;
     border: 0;
     padding: 6px 25px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
   }
 .portfolio-button_list-item-button:hover{
   background-color:var(--focus-color);
@@ -145,6 +155,7 @@ cursor: pointer;
   }
   .team-list-description{
     font-size: 16px;
+    text-align: center;
   }
   .address-list-item:hover{
     color: var(--focus-color);
@@ -227,4 +238,10 @@ color: #757575;
 }
 .address-item{
   margin-bottom: 9px;
+}
+.our_team{
+  background-color: #F5F4FA;
+}
+.team-list-item{
+  background-color: #FFFFFF;
 }
