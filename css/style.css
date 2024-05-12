@@ -245,3 +245,19 @@ color: #757575;
 .team-list-item{
   background-color: #FFFFFF;
 }
+.portfolio-border{
+  padding: 20px 24px;
+
+}
+.address-email,
+.address-tel{
+display: block;
+}
+.address-email{
+  margin-bottom: 9px;
+}
+.portfolio-border{
+  border-left:  1px solid #eee;
+  border-right:  1px solid #eee;
+  border-bottom:  1px solid #eee;
+}
