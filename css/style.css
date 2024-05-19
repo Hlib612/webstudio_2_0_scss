@@ -14,9 +14,14 @@ letter-spacing: 0.03em;
 h1, h2, h3, h4, p {
   margin: 0;
   }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    }
   .header{
-    padding-top: 71px;
-    padding-bottom: 123px;
+    padding-top: 24px;
+    padding-bottom: 25px;
     display: flex;
     gap: 12px;
   }
@@ -36,34 +41,23 @@ h1, h2, h3, h4, p {
   .navigation{
     display: flex;
   }
+  .hero{
+    background-color:var(--background-color);
+    padding-top: 200px;
+padding-bottom: 200px;
+text-align: center;
+}
+address {
+  font-style: normal;
+  }
   .flex{
     display: flex;
-  }
-  
-  ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  }
-
-  address {
-  font-style: normal;
   }
 .container{
   width: 1200px;
   padding: 0 15px;
   outline: 2px dashed red;
   margin: 0 auto;
-}
-.header{
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-.hero{
-    background-color:var(--background-color);
-    padding-top: 200px;
-padding-bottom: 200px;
-text-align: center;
 }
 footer{
     background-color:var(--background-color);
@@ -213,8 +207,10 @@ margin-bottom: 10px;
 .team-list-img{
   margin-bottom: 30px;
 }
-.advertising-list-img{
-  margin-bottom: 20px;
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .advertising-list-title{
   margin-bottom: 4px;
