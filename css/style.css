@@ -309,11 +309,19 @@ display: block;
   display: flex;
   gap: 10px;
 }
-.team-list_svg-item-link{
+.team-list_svg-item{
   width: 44px;
   height: 44px;
 }
-.team-list_svg-item:hover .team-list_svg-item-link{
+.team-list_svg-item:hover{
+  width: 44px;
+  height: 44px;
   background-color: #2196F3;
-  
+  border-radius: 50%;
+}
+.team-list_svg-item-svg{
+  fill: #AFB1B8;
+}
+.team-list_svg-item-svg:hover{
+  fill: white;
 }
