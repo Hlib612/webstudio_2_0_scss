@@ -309,7 +309,7 @@ display: block;
   display: flex;
   gap: 10px;
 }
-.team-list_svg-item{
+/* .team-list_svg-item{
   width: 44px;
   height: 44px;
 }
@@ -318,11 +318,26 @@ display: block;
   height: 44px;
   background-color: #2196F3;
   border-radius: 50%;
+} */
+.team-list_svg-item-link{
+  display: flex;
+align-items: center;
+justify-content: center;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+padding: 0;
+}
+.team-list_svg-item-link:hover{
+  width: 44px;
+  height: 44px;
+  background-color: #2196F3;
+  border-radius: 50%;
 }
 .team-list_svg-item-svg{
   fill: #AFB1B8;
 }
-.team-list_svg-item-svg:hover{
+.team-list_svg-item-link:hover .team-list_svg-item-svg{
   fill: white;
 }
 .section_with_svg_list-list-item{
@@ -347,4 +362,19 @@ margin-bottom: 50px;
 .team-list_svg{
   display: flex;
   gap: 10px;
+  justify-content: center;
+}
+.address-list-item:hover .address-list-item-svg{
+  color: white;
+}
+.section_with_svg_list-list-item-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section_with_svg_list-list-item:hover .section_with_svg_list-list-item-link{
+  border-color: #2196F3;
+}
+.section_with_svg_list-list-item:hover .section_with_svg_list-list-item-svg{
+  fill: #2196F3;
 }
