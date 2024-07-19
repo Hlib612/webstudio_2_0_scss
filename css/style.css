@@ -373,12 +373,24 @@ margin-bottom: 50px;
   align-items: center;
   margin-bottom: 94px;
 }
-.section_with_svg_list-list-item:hover .section_with_svg_list-list-item-link{
-  border-color: #2196F3;
+.section_with_svg_list-list-item:hover{
+  border: 1px solid #2196F3;
 }
 .section_with_svg_list-list-item:hover .section_with_svg_list-list-item-svg{
   fill: #2196F3;
 }
 .team-list_svg-item{
   margin-bottom: 30px;
+}
+.position_element{
+  width: 30px;
+  height: 15px;
+  background-color: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  font-weight: 700;
+font-size: 14px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
 }
