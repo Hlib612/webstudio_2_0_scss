@@ -365,16 +365,20 @@ margin-bottom: 50px;
   justify-content: center;
 }
 .address-list-item:hover .address-list-item-svg{
-  color: white;
+  fill: #2196F3;
 }
-.section_with_svg_list-list-item-link{
+.section_with_svg_list-list-item{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 94px;
 }
 .section_with_svg_list-list-item:hover .section_with_svg_list-list-item-link{
   border-color: #2196F3;
 }
 .section_with_svg_list-list-item:hover .section_with_svg_list-list-item-svg{
   fill: #2196F3;
+}
+.team-list_svg-item{
+  margin-bottom: 30px;
 }
