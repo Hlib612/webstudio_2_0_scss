@@ -72,6 +72,8 @@ address {
   margin: 0 auto;
 }
 footer{
+  display: flex;
+  justify-content: start;
     background-color:var(--background-color);
     padding-top: 60px;
     padding-bottom: 60px;
@@ -117,6 +119,7 @@ p{
 }
 address {
   font-style: normal;
+  width: 230px;
 }
 h3{
   font-weight: 700;
@@ -394,3 +397,20 @@ text-transform: uppercase;
 text-align: center;
 color: #fff;
 }
+.join_div{
+  display: flex;
+  flex-direction: column;
+}
+.join_p{
+  font-weight: 700;
+font-size: 14px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #fff;
+}
+.address-item:hover{
+color: white;
+}
+.address-email:hover{
+  color: white;
+  }
