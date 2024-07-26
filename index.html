@@ -15,11 +15,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/features.css" />
+    <link rel="stylesheet" href="./css/what_we_do.css" />
   </head>
   <body>
     <header class="header">
       <div class="container flex">
-        <nav class="navigation">
+        <nav class="navigation flex">
           <a href="./index.html" class="logo-header"
             ><span class="logo-header-span">Web</span>studio</a
           >
@@ -99,7 +105,7 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="what_we_do section">
         <div class="container">
           <h2 class="img_title">Чим ми займаємося</h2>
           <ul class="img_title-list">
@@ -358,6 +364,18 @@
           </li>
         </ul>
       </div>
+      <div>
+        <p class="subscribe_p">Підпишіться на розсилку</p>
+        <div class="flex">
+        <form name="signup_form" class="subscribe_form">
+          <label>
+          <input type="email" name="user_email" class="subscribe_input">
+        </label>
+        </form>
+        <button class="subscribe_button">Підписатися</button>
+      </div>
+      </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

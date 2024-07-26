@@ -1,105 +1,20 @@
 
-:root {
-    --background-color:#2F303A ;  
-    --main-color:rgb(255, 255, 255);
-    --text-color:#757575;
-    --focus-color:#2196F3;
-    --adresss-color:rgba(255, 255, 255, 0.6);
-}
-body{
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-letter-spacing: 0.03em;
-}
-h1, h2, h3, h4, p {
-  margin: 0;
-  }
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    }
-  .header{
-    padding-top: 24px;
-    padding-bottom: 25px;
-    display: flex;
-    gap: 12px;
-  }
-  .navigation-list{
-    display: flex;
-    flex-direction: row;
-    margin-left:  auto;
-    gap: 50px;
-    align-items: center;
-  }
-  .address-list{
-    display: flex;
-    margin-left:  auto;
-    gap: 50px;
-    align-items: center;
-  }
-  .navigation{
-    display: flex;
-  }
-  .hero{
-    background-color:var(--background-color);
-    padding-top: 200px;
-padding-bottom: 200px;
-text-align: center;
-height: 600px;
-width: 1600px;
-margin-right: auto;
-margin-left: auto;
-background-image:linear-gradient(
-  to right,
-  rgba(0, 0, 0, 0.534),
-  rgba(229, 229, 229, 0.281)
-),
- url("../images/main/hero_background.jpg");
-background-size: 1474px 600px;
-background-repeat: no-repeat;
-/*background-image:linear-gradient(240deg, black, white)*/
-}
+  
+  
 address {
   font-style: normal;
   }
-  .flex{
-    display: flex;
-  }
-.container{
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
 footer{
   display: flex;
-  justify-content: start;
+  justify-content: space-around;
     background-color:var(--background-color);
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.hero-title{
-font-weight: 900;
-font-size: 44px;
-line-height: 136%;
-letter-spacing: 0.06em;
-  color:var(--main-color);
-  margin-bottom: 30px;
-}
+
 p{
     color:var(--text-color);
     font-weight: 400;
-}
-.logo-header{
-    font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-size: 26px;
-  color: black;
-  margin-right: 93px;
-}
-.logo-header-span{
-  color:var(--focus-color);
 }
   .logo-footer{
     font-family: "Raleway", sans-serif;
@@ -124,24 +39,8 @@ address {
 h3{
   font-weight: 700;
 }
-  .hero-button{
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-    background-color:#2196F3;
-    padding: 10px 32px;
-    min-width: 216px;
-    border: 0;
-  }
-  .navigation-list{
-    font-weight: 500;
-  }
-  .navigation-list-item:hover{
-color: var(--focus-color);
-cursor: pointer;
-  }
-  .address-list{
-    font-weight: 500;
-  }
+  
+
   h2 {
     font-weight: 700;
   }
@@ -178,42 +77,11 @@ cursor: pointer;
   .advertising-list-description{
     font-size: 16px;
   }
-  .features{
-padding-top: 94px;
-  }
-  .employees-list-item::before{
-    display: block;
-    content: "";
-    height: 120px;
-    background-color: #F5F4FA;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 30px;
-    border-radius: 4px;
-  }
-  .employees-list-item.antena::before{
-    background-image: url("../images/main/antenna.svg");
-  }
-  .employees-list-item.clock::before{
-    background-image: url("../images/main/clock.svg");
-  }
-  .employees-list-item.diagram::before{
-    background-image: url("../images/main/diagram.svg");
-  }
-  .employees-list-item.astronaut::before{
-    background-image: url("../images/main/astronaut.svg");
-  }
-  .employees-list-item-title{
-margin-bottom: 10px;
-  }
 .section{
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.img_title{
-  text-align: center;
-  margin-bottom: 50px;
-}
+
 .team{
   text-align: center;
   margin-bottom: 50px;
@@ -233,19 +101,7 @@ img {
 .advertising-list-title{
   margin-bottom: 4px;
 }
-.address-list-item{
-color: #757575;
-}
-.employees-list{
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-}
-.img_title-list{
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-}
+
 .team-list{
   display: flex;
   flex-direction: row;
@@ -293,18 +149,7 @@ display: block;
   border-right:  1px solid #eee;
   border-bottom:  1px solid #eee;
 }
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
+
 .advertising-list-item:hover{
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
@@ -367,9 +212,6 @@ margin-bottom: 50px;
   gap: 10px;
   justify-content: center;
 }
-.address-list-item:hover .address-list-item-svg{
-  fill: #2196F3;
-}
 .section_with_svg_list-list-item{
   display: flex;
   justify-content: center;
@@ -385,20 +227,7 @@ margin-bottom: 50px;
 .team-list_svg-item{
   margin-bottom: 30px;
 }
-.position_element{
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 370px;
-  height: 70px;
-  background-color: rgba(47, 48, 58, 0.8);
-  font-weight: 700;
-font-size: 14px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-text-align: center;
-color: #fff;
-}
+
 .join_div{
   display: flex;
   flex-direction: column;
@@ -415,4 +244,30 @@ color: white;
 }
 .address-email:hover{
   color: white;
+  }
+  .subscribe_p{
+    margin-bottom: 20px;
+    font-weight: 700;
+font-size: 14px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #fff;
+  }
+  .subscribe_input{
+    background-color: var(--background-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 4px;
+width: 358px;
+height: 50px;
+  }
+  .subscribe_button{
+    width: 144px;
+height: 30px;
+color: rgba(255, 255, 255, 0.6);;
+background-color: #2195f3ae;
+margin-left: 12px;
+  }
+  .subscribe_button:hover{
+    color: #fff;
+    background-color: #2196F3;
   }
