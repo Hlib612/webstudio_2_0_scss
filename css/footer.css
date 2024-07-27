@@ -1,0 +1,89 @@
+footer{
+    display: flex;
+    justify-content: space-around;
+      background-color:var(--background-color);
+      padding-top: 60px;
+      padding-bottom: 60px;
+  }
+  .logo-footer{
+    font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 26px;
+  color: white;
+  display: inline-block;
+  margin-bottom: 20px;
+  }
+  .logo-footer-span{
+    color:var(--focus-color);
+  }
+  address {
+    font-style: normal;
+    width: 230px;
+  }
+  .address > a{
+    color: var(--adresss-color)
+  }
+  .address-item{
+    font-weight: 400;
+    color: var(--main-color);
+    margin-bottom: 9px;
+  }
+  .address-list-item:hover{
+    color: var(--focus-color);
+cursor: pointer;
+  }
+  .address-list-item:hover{
+    color: var(--focus-color);
+cursor: pointer;
+  }
+  .address-email,
+.address-tel{
+display: block;
+}
+.address-email{
+  margin-bottom: 9px;
+}
+.address-item:hover{
+    color: white;
+    }
+    .address-email:hover{
+      color: white;
+      }
+      .join_div{
+        display: flex;
+        flex-direction: column;
+      }
+      .join_p{
+        font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #fff;
+      }
+      .subscribe_p{
+        margin-bottom: 20px;
+        font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+      }
+      .subscribe_input{
+        background-color: var(--background-color);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+      }
+      .subscribe_button{
+        width: 144px;
+    height: 30px;
+    color: rgba(255, 255, 255, 0.6);;
+    background-color: #2195f3ae;
+    margin-left: 12px;
+      }
+      .subscribe_button:hover{
+        color: #fff;
+        background-color: #2196F3;
+      }

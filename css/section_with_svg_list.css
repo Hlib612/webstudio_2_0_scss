@@ -1,0 +1,29 @@
+.section_with_svg_list-list{
+    display: flex;
+    gap: 30px;
+  }
+.section_with_svg_list-list-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 94px;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+  }
+  .section_with_svg_list-title{
+    font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+  }
+  .section_with_svg_list-list-item-svg{
+    fill: #AFB1B8;
+  }
+  .section_with_svg_list-list-item:hover{
+    border: 1px solid #2196F3;
+  }
+  .section_with_svg_list-list-item:hover .section_with_svg_list-list-item-svg{
+    fill: #2196F3;
+  }
