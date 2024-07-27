@@ -63,10 +63,7 @@ h3{
   .address > a{
     color: var(--adresss-color)
   }
-  .team-list-description{
-    font-size: 16px;
-    text-align: center;
-  }
+  
   .address-list-item:hover{
     color: var(--focus-color);
 cursor: pointer;
@@ -82,17 +79,9 @@ cursor: pointer;
   padding-bottom: 94px;
 }
 
-.team{
-  text-align: center;
-  margin-bottom: 50px;
-}
-.team-list-name{
-  text-align: center;
-  margin-bottom: 10px;
-}
-.team-list-img{
-  margin-bottom: 30px;
-}
+
+
+
 img {
   display: block;
   width: 100%;
@@ -102,11 +91,7 @@ img {
   margin-bottom: 4px;
 }
 
-.team-list{
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-}
+
 .advertising-list{
   display: flex;
   flex-direction: row;
@@ -126,13 +111,8 @@ img {
 .address-item{
   margin-bottom: 9px;
 }
-.our_team{
-  background-color: #F5F4FA;
-}
-.team-list-item{
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-}
+
+
 .portfolio-border{
   padding: 20px 24px;
 
@@ -153,41 +133,9 @@ display: block;
 .advertising-list-item:hover{
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
-.team-list{
-  display: flex;
-  gap: 10px;
-}
-/* .team-list_svg-item{
-  width: 44px;
-  height: 44px;
-}
-.team-list_svg-item:hover{
-  width: 44px;
-  height: 44px;
-  background-color: #2196F3;
-  border-radius: 50%;
-} */
-.team-list_svg-item-link{
-  display: flex;
-align-items: center;
-justify-content: center;
-width: 44px;
-height: 44px;
-border-radius: 50%;
-padding: 0;
-}
-.team-list_svg-item-link:hover{
-  width: 44px;
-  height: 44px;
-  background-color: #2196F3;
-  border-radius: 50%;
-}
-.team-list_svg-item-svg{
-  fill: #AFB1B8;
-}
-.team-list_svg-item-link:hover .team-list_svg-item-svg{
-  fill: white;
-}
+
+
+
 .section_with_svg_list-list-item{
   width: 170px;
   height: 92px;
@@ -207,11 +155,7 @@ margin-bottom: 50px;
 .section_with_svg_list-list-item-svg{
   fill: #AFB1B8;
 }
-.team-list_svg{
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-}
+
 .section_with_svg_list-list-item{
   display: flex;
   justify-content: center;
@@ -224,9 +168,7 @@ margin-bottom: 50px;
 .section_with_svg_list-list-item:hover .section_with_svg_list-list-item-svg{
   fill: #2196F3;
 }
-.team-list_svg-item{
-  margin-bottom: 30px;
-}
+
 
 .join_div{
   display: flex;
@@ -271,3 +213,81 @@ margin-left: 12px;
     color: #fff;
     background-color: #2196F3;
   }
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    overflow-y: auto;
+    visibility: visible;
+    transition: opacity 500ms ease-in-out;
+    }
+    
+    .backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    
+    visibility: hidden;
+    }
+    
+    .no-scroll {
+    overflow: hidden;
+    }
+    
+    .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    min-width: 528px;
+    min-height: 582px;
+    border-radius: 4px;
+    background-color: white;
+    transform: translate(-50%, -50%) scale(1);
+    
+    
+    
+    transition: transform 300ms, color 300ms;
+    }
+    
+    .backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.7);
+    }
+    .close_button{
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: none;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      fill: black;
+
+    }
+    .modal_label{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 4px;
+    }
+    .modal_field{
+      margin-bottom: 10px;
+    }
+    .modal_field:focus-within .modal_input {
+      border-color: #2196F3;
+    }
+    .modal_input{
+      padding: 11px 12px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+width: 448px;
+height: 40px;
+width: 100%;
+outline: none;
+    }
