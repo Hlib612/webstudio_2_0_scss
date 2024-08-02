@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="./css/section_with_svg_list.css" />
   <link rel="stylesheet" href="./css/footer.css" />
   <link rel="stylesheet" href="./css/modal_windows.css" />
+  <link rel="stylesheet" href="./css/portfolio.css"/>
 </head>
 
 <body>
@@ -381,27 +382,32 @@
   </footer>
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button class="close_button" data-modal-close>Закрити</button>
+      <button class="close_button" data-modal-close><svg width="18px" height="18px" class="close_button_svg"><use href="./images/svg/symbol-defs.svg#icon-close_black.svg"></use></svg></button>
       <p class="modal_p">Залиште свої дані, ми вам передзвонимо</p>
       <form class="modal_form">
         <div class="modal_field">
-          <label for="user_name" class="modal_label">Ім'я</label>
-          <input type="text" name="user_name" class="modal_input">
+          <svg width="18px" height="18px" class="modal_svg"><use href="./images/svg/symbol-defs.svg#icon-person_black.svg"></use></svg>
+          <label for="user_name" class="modal_label" >Ім'я</label>
+          <input type="text" name="user_name" class="modal_input"  placeholder="Сергій Притула" minlength="3" required>
         </div>
         <div class="modal_field">
+          <svg width="18px" height="18px" class="modal_svg"><use href="./images/svg/symbol-defs.svg#icon-phone_black.svg"></use></svg>
           <label for="user_phone" class="modal_label">Телефон</label>
-          <input type="text" name="user_phone" class="modal_input">
+          <input type="text" name="user_phone" class="modal_input" placeholder="+380987655683">
         </div>
         <div class="modal_field">
+          <svg width="18px" height="18px" class="modal_svg"><use href="./images/svg/symbol-defs.svg#icon-email_black.svg"></use></svg>
           <label for="user_email" class="modal_label">Пошта</label>
-          <input type="text" name="user_email" class="modal_input">
+          <input type="text" name="user_email" class="modal_input" placeholder="Siriy@mail.com" required>
         </div>
         <div class="modal_field">
           <label for="user_feedback" class="modal_label">Коментар</label>
-          <textarea class="modal_textarea" name="user_feedback"></textarea>
+          <textarea class="modal_textarea" name="user_feedback"  placeholder="Введіть текст"></textarea>
         </div>
+        <input type="checkbox" name="accept" value="music" id="accept" class="checkbox"/>
+<label for="accept">Погоджуюся з розсилкою та приймаю <a href="#" class="checkbox_link">Умови договору</a></label>
       </form>
-      <button type="submit">Відправити</button>
+      <button type="submit" class="modal_submit-button">Відправити</button>
     </div>
   </div>
   <script src="./js/modal.js"></script>

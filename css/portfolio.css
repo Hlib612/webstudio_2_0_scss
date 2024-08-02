@@ -1,58 +1,82 @@
 .portfolio-title {
-    color: white;
+  color: #ffffff;
 }
 
 .portfolio-border {
-    border-left: 1px solid #eee;
-    border-right: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-    padding: 20px 24px;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 20px 24px;
 }
 
 .portfolio-title-button_list {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    justify-content: center;
-    margin-bottom: 56px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 56px;
 }
 
 .portfolio-button_list-item-button {
-    background-color: #F5F4FA;
-    border: 0;
-    padding: 6px 25px;
-    border-radius: 4px;
-    height: 38px;
+  background-color: #f5f4fa;
+  border: 0;
+  padding: 6px 25px;
+  border-radius: 4px;
+  height: 38px;
 }
 
 .portfolio-button_list-item-button:hover {
-    background-color: var(--focus-color);
-    color: white;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: var(--focus-color);
+  color: white;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .advertising-list {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    flex-wrap: wrap
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .advertising-list-title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 200%;
-    letter-spacing: 0.06em;
-    color: #212121;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 200%;
+  letter-spacing: 0.06em;
+  color: #212121;
 }
 
 .advertising-list-description {
-    font-size: 16px;
-    line-height: 187%;
-    letter-spacing: 0.03em;
-    color: #757575;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 .advertising-list-item:hover {
-    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+.advertising-list-img {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 1000ms ease;
+}
+.advertising-list-img:hover .overlay {
+  transform: translateY(0%);
+}
+.box {
+  width: 370px;
+  height: 294px;
+  background-color: aqua;
 }
