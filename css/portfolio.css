@@ -72,11 +72,20 @@
   transform: translateY(100%);
   transition: transform 1000ms ease;
 }
-.advertising-list-img:hover .overlay {
+.advertising-list-item:hover .overlay {
   transform: translateY(0%);
 }
 .box {
+  position: relative;
   width: 370px;
   height: 294px;
   background-color: aqua;
+  overflow: hidden;
+}
+.overlay_p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  color: #fff;
 }
