@@ -10,6 +10,9 @@
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
+    transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
   }
   .section_with_svg_list-title{
     font-weight: 700;
@@ -20,10 +23,19 @@
   }
   .section_with_svg_list-list-item-svg{
     fill: #AFB1B8;
+    transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
   }
   .section_with_svg_list-list-item:hover{
     border: 1px solid #2196F3;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
   }
   .section_with_svg_list-list-item:hover .section_with_svg_list-list-item-svg{
     fill: #2196F3;
+    transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
   }

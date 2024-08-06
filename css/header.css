@@ -33,10 +33,17 @@
   align-items: center;
   font-weight: 500;
 }
-
+.navigation-list-item{
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+}
 .navigation-list-item:hover {
   color: var(--focus-color);
   cursor: pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .address-list {
@@ -47,16 +54,30 @@
   font-weight: 500px;
 }
 
-.address-list-item {
+.address-list-item{
   color: #757575;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
 }
-
+.address-list-item:hover{
+  color: var(--focus-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+}
 .address-list-item-svg {
   fill: #757575;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .address-list-item:hover .address-list-item-svg {
   fill: #2196f3;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
 }
 .navigation-link.curent{
 position: relative;

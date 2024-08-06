@@ -23,12 +23,18 @@
   padding: 6px 25px;
   border-radius: 4px;
   height: 38px;
+  transition-property: box-shadow, color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button_list-item-button:hover {
   background-color: var(--focus-color);
   color: white;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  transition-property: box-shadow, color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .advertising-list {
@@ -52,10 +58,17 @@
   letter-spacing: 0.03em;
   color: #757575;
 }
-
+.advertising-list-item {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .advertising-list-item:hover {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .advertising-list-img {
   position: relative;

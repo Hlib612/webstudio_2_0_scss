@@ -32,39 +32,15 @@
     min-width: 216px;
     border: 0;
     border-radius: 4px;
+    transition-property: color ,background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .hero-button:hover {
     color: white;
     background-color: #2196F3;
-}
-.menu{
-    position: relative;
-    width: 260px;
-    height: 360px;
-}
-.menu-link{
-    z-index: 1;
-    width: 4px;
-    height: 360px;
-    display: block;
-    padding: 10px 20px;
-    background-color: rgb(98, 100, 99);
-    border: 1px solid black;
-    cursor: pointer;
-}
-.submenu{
-    position: absolute;
-    z-index: 1;
-    left: 100%;
-    top: 0;
-    width: 100%;
-    display: none;
-    background-color: rgb(59, 60, 59);
-}
-.menu-link:hover + .submenu{
-    display: block;
-}
-.submenu_item_link{
-color: white;
+    transition-property: color ,background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
 }

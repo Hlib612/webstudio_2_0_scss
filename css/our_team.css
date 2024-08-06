@@ -40,6 +40,9 @@
     height: 44px;
     border-radius: 50%;
     padding: 0;
+    transition-property: background-color;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .team-list_svg-item-link:hover {
@@ -47,14 +50,23 @@
     height: 44px;
     background-color: #2196F3;
     border-radius: 50%;
+    transition-property: background-color;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .team-list_svg-item-svg {
     fill: #AFB1B8;
+    transition-property: fill;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .team-list_svg-item-link:hover .team-list_svg-item-svg {
     fill: white;
+    transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .team-list_svg {
