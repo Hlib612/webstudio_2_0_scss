@@ -26,6 +26,10 @@
     transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+  animation-name: blik;
+  animation-duration: 2500ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
   }
   .section_with_svg_list-list-item:hover{
     border: 1px solid #2196F3;
@@ -38,4 +42,16 @@
     transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+  animation: none;
+  }
+  @keyframes blik {
+    0%{
+      fill: #c2c2c4c0;
+    }
+    50%{
+      fill: #626263;
+    }
+    100%{
+      fill: #c2c2c4c0;
+    }
   }
