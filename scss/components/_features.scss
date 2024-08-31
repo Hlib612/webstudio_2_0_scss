@@ -1,0 +1,53 @@
+.features {
+    padding-top: 94px;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.employees-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.employees-list-item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.employees-list-item.antena::before {
+    background-image: url("../images/main/antenna.svg");
+}
+
+.employees-list-item.clock::before {
+    background-image: url("../images/main/clock.svg");
+}
+
+.employees-list-item.diagram::before {
+    background-image: url("../images/main/diagram.svg");
+}
+
+.employees-list-item.astronaut::before {
+    background-image: url("../images/main/astronaut.svg");
+}
+
+.employees-list-item-title {
+    margin-bottom: 10px;
+}
