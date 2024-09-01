@@ -12,7 +12,7 @@ body{
       display: flex;
     }
     p{
-      color:var(--text-color);
+      color: $textColor;
       font-weight: 400;
   }
   h3{

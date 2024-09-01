@@ -30,7 +30,7 @@
     min-width: 528px;
     min-height: 582px;
     border-radius: 4px;
-    background-color: white;
+    background-color: $mainColor;
     transform: translate(-50%, -50%) rotate(720deg) scale(1);
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
       0 1px 3px 0 rgba(0, 0, 0, 0.12);
@@ -62,14 +62,14 @@
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.01em;
-    color: #757575;
+    color: $textColor;
   }
   .modal_field {
     position: relative;
     margin-bottom: 10px;
   }
   .modal_field:focus-within .modal_input{
-    border-color: #2196f3;
+    border-color: $focusColor;
   }
   .modal_input {
     padding: 11px 12px;
@@ -137,7 +137,7 @@
   letter-spacing: 0.03em;
     text-decoration: underline;
   text-decoration-skip-ink: none;
-  color: #2196f3;
+  color: $focusColor;
   }
   .modal_svg{
     position: absolute;

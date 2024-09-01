@@ -1,7 +1,7 @@
 footer {
     display: flex;
     justify-content: space-around;
-    background-color: var(--background-color);
+    background-color: $backgroundColor;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -10,31 +10,31 @@ footer {
     font-optical-sizing: auto;
     font-weight: 700;
     font-size: 26px;
-    color: white;
+    color: $mainColor;
     display: inline-block;
     margin-bottom: 20px;
   }
   .logo-footer-span {
-    color: var(--focus-color);
+    color: $adresssColor;
   }
   address {
     font-style: normal;
     width: 230px;
   }
   .address > a {
-    color: var(--adresss-color);
+    color: $adresssColor;
   }
   .address-item {
     font-weight: 400;
-    color: var(--main-color);
+    color: $mainColor;
     margin-bottom: 9px;
   }
   .address-list-item:hover {
-    color: var(--focus-color);
+    color: $focusColor;
     cursor: pointer;
   }
   .address-list-item:hover {
-    color: var(--focus-color);
+    color: $focusColor;
     cursor: pointer;
   }
   .address-email,
@@ -61,7 +61,7 @@ footer {
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #fff;
+    color: $mainColor;
   }
   .subscribe_p {
     margin-bottom: 20px;
@@ -69,10 +69,10 @@ footer {
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #fff;
+    color: $mainColor;
   }
   .subscribe_input {
-    background-color: var(--background-color);
+    background-color: $backgroundColor;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     width: 358px;
@@ -96,7 +96,7 @@ footer {
   }
   .subscribe_button:hover {
     color: #fff;
-    background-color: #2196f3;
+    background-color: $focusColor;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     transition-property: color, background-color;
     transition-duration: 250ms;

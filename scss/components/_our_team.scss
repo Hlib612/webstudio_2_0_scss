@@ -14,7 +14,7 @@
 }
 
 .team-list-item {
-    background-color: #FFFFFF;
+    background-color: $mainColor;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -48,7 +48,7 @@
 .team-list_svg-item-link:hover {
     width: 44px;
     height: 44px;
-    background-color: #2196F3;
+    background-color: $focusColor;
     border-radius: 50%;
     transition-property: background-color;
   transition-duration: 400ms;

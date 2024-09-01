@@ -1,5 +1,5 @@
 .hero {
-    background-color: var(--background-color);
+    background-color: $backgroundColor;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
@@ -39,7 +39,7 @@
 
 .hero-button:hover {
     color: white;
-    background-color: #2196F3;
+    background-color: $focusColor;
     transition-property: color ,background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;

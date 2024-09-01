@@ -1,5 +1,5 @@
 .portfolio-title {
-    color: #ffffff;
+    color: $mainColor;
   }
   
   .portfolio-border {
@@ -56,7 +56,7 @@
     font-size: 16px;
     line-height: 187%;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: $textColor;
   }
   .advertising-list-item {
     transition-property: box-shadow;
@@ -100,6 +100,6 @@
     font-size: 18px;
     line-height: 156%;
     letter-spacing: 0.03em;
-    color: #fff;
+    color: $mainColor;
   }
   

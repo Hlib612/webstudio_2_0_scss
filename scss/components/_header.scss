@@ -9,7 +9,7 @@
     display: flex;
     gap: 12px;
     border: 1px solid red;
-    background-color: white;
+    background-color: $mainColor;
   }
   
   .logo-header {
@@ -55,26 +55,26 @@
   }
   
   .address-list-item{
-    color: #757575;
+    color: $textColor;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
   }
   .address-list-item:hover{
-    color: var(--focus-color);
+    color: $focusColor;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
   }
   .address-list-item-svg {
-    fill: #757575;
+    fill: $textColor;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
   }
   
   .address-list-item:hover .address-list-item-svg {
-    fill: #2196f3;
+    fill: $focusColor;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
@@ -90,5 +90,5 @@
     border-radius: 2px;
     width: 100%;
     height: 4px;
-    background-color: var(--focus-color);
+    background-color: $backgroundColor;
   }
