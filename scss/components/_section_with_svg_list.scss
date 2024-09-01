@@ -1,48 +1,48 @@
+.section_with_svg_list-title{
+  font-weight: 700;
+font-size: 36px;
+letter-spacing: 0.03em;
+text-align: center;
+margin-bottom: 50px;
+}
 .section_with_svg_list-list{
     display: flex;
     gap: $mainGap;
-  }
-.section_with_svg_list-list-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 94px;
-    width: 170px;
-    height: 92px;
-    border: 1px solid #AFB1B8;
-    transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
-  }
-  .section_with_svg_list-title{
-    font-weight: 700;
-  font-size: 36px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  margin-bottom: 50px;
-  }
-  .section_with_svg_list-list-item-svg{
-    fill: #AFB1B8;
-    transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
-  animation-name: blik;
-  animation-duration: 2500ms;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  }
-  .section_with_svg_list-list-item:hover{
-    border: 1px solid $focusColor;
-    transition-property: border;
+    &-item{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 94px;
+      width: 170px;
+      height: 92px;
+      border: 1px solid #AFB1B8;
+      transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
-  }
-  .section_with_svg_list-list-item:hover .section_with_svg_list-list-item-svg{
-    fill: $focusColor;
-    transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
-  animation: none;
+    }
+    &-svg{
+      fill: #AFB1B8;
+      transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+    animation-name: blik;
+    animation-duration: 2500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    }
+    &-item:hover{
+      border: 1px solid $focusColor;
+      transition-property: border;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+    }
+    &-item:hover &-svg{
+      fill: $focusColor;
+      transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+    animation: none;
+    }
   }
   @keyframes blik {
     0%{

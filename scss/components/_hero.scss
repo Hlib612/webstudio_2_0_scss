@@ -13,34 +13,31 @@
         url("../images/main/hero_background.jpg");
     background-size: 1474px 600px;
     background-repeat: no-repeat;
+    &-title {
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 136%;
+      letter-spacing: 0.06em;
+      color: var(--main-color);
+      margin-bottom: 30px;
+  }
 }
-
-.hero-title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 136%;
-    letter-spacing: 0.06em;
-    color: var(--main-color);
-    margin-bottom: 30px;
-}
-
 .hero-button {
-    font-weight: 700;
-    color: rgba(210, 210, 210, 0.864);
-    background-color: #2195f3c6;
-    padding: 10px 32px;
-    min-width: 216px;
-    border: 0;
-    border-radius: 4px;
-    transition-property: color ,background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+  font-weight: 700;
+  color: rgba(210, 210, 210, 0.864);
+  background-color: #2195f3c6;
+  padding: 10px 32px;
+  min-width: 216px;
+  border: 0;
+  border-radius: 4px;
+  transition-property: color ,background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+&:hover {
+  color: white;
+  background-color: $focusColor;
+  transition-property: color ,background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
 }
-
-.hero-button:hover {
-    color: white;
-    background-color: $focusColor;
-    transition-property: color ,background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
 }

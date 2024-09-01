@@ -1,80 +1,76 @@
 .our_team {
     background-color: #F5F4FA;
 }
-
 .team-title {
     text-align: center;
     margin-bottom: 50px;
 }
-
 .team-list {
     display: flex;
     flex-direction: row;
     gap: 30px;
-}
-
-.team-list-item {
-    background-color: $mainColor;
-    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-}
-
-.team-list-name {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.team-list-img {
-    margin-bottom: 30px;
-}
-
-.team-list-description {
-    font-size: 16px;
-    text-align: center;
-}
-
-.team-list_svg-item-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    padding: 0;
-    transition-property: background-color;
-  transition-duration: 400ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
-}
-
-.team-list_svg-item-link:hover {
-    width: 44px;
-    height: 44px;
-    background-color: $focusColor;
-    border-radius: 50%;
-    transition-property: background-color;
-  transition-duration: 400ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
-}
-
-.team-list_svg-item-svg {
-    fill: #AFB1B8;
-    transition-property: fill;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
-}
-
-.team-list_svg-item-link:hover .team-list_svg-item-svg {
-    fill: white;
-    transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+    &-item {
+        background-color: $mainColor;
+        box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    }
+    
+    &-name {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    &-img {
+        margin-bottom: 30px;
+    }
+    
+    &-description {
+        font-size: 16px;
+        text-align: center;
+    }
+    
 }
 
 .team-list_svg {
     display: flex;
     gap: 10px;
     justify-content: center;
-}
-
-.team-list_svg-item {
-    margin-bottom: 30px;
+    &-item {
+        margin-bottom: 30px;
+    }
+    &-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        padding: 0;
+        transition-property: background-color;
+      transition-duration: 400ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+    }
+    
+    &-link:hover {
+        width: 44px;
+        height: 44px;
+        background-color: $focusColor;
+        border-radius: 50%;
+        transition-property: background-color;
+      transition-duration: 400ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+    }
+    
+    &-svg {
+        fill: #AFB1B8;
+        transition-property: fill;
+      transition-duration: 300ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+    }
+    
+    &-link:hover &-svg {
+        fill: white;
+        transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+    }
 }

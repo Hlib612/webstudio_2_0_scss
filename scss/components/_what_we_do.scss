@@ -1,14 +1,14 @@
 .img_title{
     text-align: center;
     margin-bottom: 50px;
-  }
-  .img_title-list{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-  }
-  .img_title-list-item{
-    position: relative;
+    &-list{
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+    }
+    &-item{
+      position: relative;
+    }
   }
   .position_element{
     position: absolute;
