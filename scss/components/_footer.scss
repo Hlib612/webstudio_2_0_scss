@@ -20,35 +20,35 @@ footer {
   address {
     font-style: normal;
     width: 230px;
-  }
-  .address > a {
-    color: $adresssColor;
-  }
-  .address-item {
-    font-weight: 400;
-    color: $mainColor;
-    margin-bottom: 9px;
-  }
-  .address-list-item:hover {
-    color: $focusColor;
-    cursor: pointer;
-  }
-  .address-list-item:hover {
-    color: $focusColor;
-    cursor: pointer;
-  }
-  .address-email,
-  .address-tel {
-    display: block;
-  }
-  .address-email {
-    margin-bottom: 9px;
-  }
-  .address-item:hover {
-    color: white;
-  }
-  .address-email:hover {
-    color: white;
+    & > a {
+      color: $adresssColor;
+    }
+    &-item {
+      font-weight: 400;
+      color: $mainColor;
+      margin-bottom: 9px;
+    }
+    &-list-item:hover {
+      color: $focusColor;
+      cursor: pointer;
+    }
+    &-list-item:hover {
+      color: $focusColor;
+      cursor: pointer;
+    }
+    &-email,
+    .address-tel {
+      display: block;
+    }
+    &-email {
+      margin-bottom: 9px;
+    }
+    &-item:hover {
+      color: white;
+    }
+    &-email:hover {
+      color: white;
+    }
   }
   .join_div {
     display: flex;
