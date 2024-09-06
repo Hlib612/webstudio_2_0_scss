@@ -42,51 +42,49 @@
     flex-direction: row;
     gap: 30px;
     flex-wrap: wrap;
-  }
-  
-  .advertising-list-title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 200%;
-    letter-spacing: 0.06em;
-    color: #212121;
-  }
-  
-  .advertising-list-description {
-    font-size: 16px;
-    line-height: 187%;
-    letter-spacing: 0.03em;
-    color: $textColor;
-  }
-  .advertising-list-item {
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .advertising-list-item:hover {
-    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
-      0 1px 1px 0 rgba(0, 0, 0, 0.12);
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .advertising-list-img {
-    position: relative;
-    overflow: hidden;
-  }
-  .overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 30px;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(33, 150, 243, 0.9);
-    transform: translateY(100%);
-    transition: transform 1000ms ease;
-  }
-  .advertising-list-item:hover .overlay {
-    transform: translateY(0%);
+    .advertising-list-title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 200%;
+      letter-spacing: 0.06em;
+      color: #212121;
+    }
+    .advertising-list-description {
+      font-size: 16px;
+      line-height: 187%;
+      letter-spacing: 0.03em;
+      color: $textColor;
+    }
+    .advertising-list-item {
+      transition-property: box-shadow;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .advertising-list-item:hover {
+      box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+        0 1px 1px 0 rgba(0, 0, 0, 0.12);
+      transition-property: box-shadow;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .advertising-list-img {
+      position: relative;
+      overflow: hidden;
+    }
+    .overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: 30px;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(33, 150, 243, 0.9);
+      transform: translateY(100%);
+      transition: transform 1000ms ease;
+    }
+    .advertising-list-item:hover .overlay {
+      transform: translateY(0%);
+    }
   }
   .box {
     position: relative;
