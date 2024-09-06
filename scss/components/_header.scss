@@ -19,7 +19,7 @@
     margin-right: 93px;
   }
   &-span {
-    color: var(--focus-color);
+    color: $focusColor;
   }
   }
   .navigation-list {
@@ -35,7 +35,7 @@
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
     }
     &-item:hover {
-      color: var(--focus-color);
+      color: $focusColor;
       cursor: pointer;
       transition-property: color;
       transition-duration: 250ms;

@@ -83,7 +83,7 @@ h2 {
   margin-right: 93px;
 }
 .header-span {
-  color: var(--focus-color);
+  color: #2196F3;
 }
 
 .navigation-list {
@@ -110,7 +110,7 @@ h2 {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation-list-item:hover {
-  color: var(--focus-color);
+  color: #2196F3;
   cursor: pointer;
   -webkit-transition-property: color;
   transition-property: color;
@@ -200,7 +200,7 @@ h2 {
   font-size: 44px;
   line-height: 136%;
   letter-spacing: 0.06em;
-  color: var(--main-color);
+  color: rgb(255, 255, 255);
   margin-bottom: 30px;
 }
 
@@ -876,7 +876,7 @@ address-email:hover {
   padding: 20px 24px;
 }
 
-.portfolio-title-button_list {
+.portfolio-button_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -890,7 +890,6 @@ address-email:hover {
           justify-content: center;
   margin-bottom: 56px;
 }
-
 .portfolio-button_list-item-button {
   background-color: #f5f4fa;
   border: 0;
@@ -906,7 +905,6 @@ address-email:hover {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .portfolio-button_list-item-button:hover {
   background-color: var(--focus-color);
   color: white;
@@ -934,20 +932,20 @@ address-email:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.advertising-list .advertising-list-title {
+.advertising-list-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 200%;
   letter-spacing: 0.06em;
   color: #212121;
 }
-.advertising-list .advertising-list-description {
+.advertising-list-description {
   font-size: 16px;
   line-height: 187%;
   letter-spacing: 0.03em;
   color: #757575;
 }
-.advertising-list .advertising-list-item {
+.advertising-list-item {
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -957,7 +955,7 @@ address-email:hover {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.advertising-list .advertising-list-item:hover {
+.advertising-list-item:hover {
   -webkit-box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   -webkit-transition-property: -webkit-box-shadow;
@@ -969,26 +967,11 @@ address-email:hover {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.advertising-list .advertising-list-img {
+.advertising-list-img {
   position: relative;
   overflow: hidden;
 }
-.advertising-list .overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding: 30px;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(33, 150, 243, 0.9);
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-  -webkit-transition: -webkit-transform 1000ms ease;
-  transition: -webkit-transform 1000ms ease;
-  transition: transform 1000ms ease;
-  transition: transform 1000ms ease, -webkit-transform 1000ms ease;
-}
-.advertising-list .advertising-list-item:hover .overlay {
+.advertising-list-item:hover .overlay {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }
@@ -1007,4 +990,20 @@ address-email:hover {
   line-height: 156%;
   letter-spacing: 0.03em;
   color: rgb(255, 255, 255);
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: -webkit-transform 1000ms ease;
+  transition: -webkit-transform 1000ms ease;
+  transition: transform 1000ms ease;
+  transition: transform 1000ms ease, -webkit-transform 1000ms ease;
 }/*# sourceMappingURL=main.css.map */
