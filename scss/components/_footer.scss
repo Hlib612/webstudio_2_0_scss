@@ -4,18 +4,18 @@ footer {
     background-color: $backgroundColor;
     padding-top: 60px;
     padding-bottom: 60px;
-  }
-  .logo-footer {
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-size: 26px;
-    color: $mainColor;
-    display: inline-block;
-    margin-bottom: 20px;
-  }
-  .logo-footer-span {
-    color: $adresssColor;
+    &-logo {
+      font-family: "Raleway", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-size: 26px;
+      color: $mainColor;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    &-logo-span {
+      color: $adresssColor;
+    }
   }
   address {
     font-style: normal;
