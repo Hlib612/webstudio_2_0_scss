@@ -46,7 +46,7 @@
       }
       &-link.curent::after {
           position: absolute;
-          top: 28px;
+          top: calc(100% + 28px);
         content: "";
         display: block;
         border-radius: 2px;
