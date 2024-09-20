@@ -1,3 +1,7 @@
+%transition{
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+}
 .section_with_svg_list-title{
   font-weight: 700;
 font-size: 36px;
@@ -16,15 +20,13 @@ margin-bottom: 50px;
       width: 170px;
       height: 92px;
       border: 1px solid #AFB1B8;
+      @extend %transition;
       transition-property: border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
     }
     &-svg{
       fill: #AFB1B8;
       transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+      @extend %transition;
     animation-name: blik;
     animation-duration: 2500ms;
     animation-timing-function: linear;
@@ -33,14 +35,12 @@ margin-bottom: 50px;
     &-item:hover{
       border: 1px solid $focusColor;
       transition-property: border;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+      @extend %transition;
     }
     &-item:hover &-svg{
       fill: $focusColor;
       transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+      @extend %transition;
     animation: none;
     }
   }

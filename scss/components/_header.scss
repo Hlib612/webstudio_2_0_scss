@@ -1,3 +1,9 @@
+@mixin transition($color){
+  color: $color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+}
 .header {
     position: fixed;
     top: 0;
@@ -35,11 +41,8 @@
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
     }
     &-item:hover {
-      color: $focusColor;
       cursor: pointer;
-      transition-property: color;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+      @include transition($focusColor)
     }
     &-link.curent{
       position: relative;
@@ -63,16 +66,10 @@
     font-weight: 500px;
 
     &-item{
-      color: $textColor;
-      transition-property: color;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+      @include transition($textColor)
     }
     &-item:hover{
-      color: $focusColor;
-      transition-property: color;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+      @include transition($focusColor)
     }
     &-svg {
       fill: $textColor;
