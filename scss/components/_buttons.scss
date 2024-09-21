@@ -1,0 +1,101 @@
+.subscribe_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #2195f3ae;
+    margin-left: 12px;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .subscribe_button:hover {
+    color: #fff;
+    background-color: $focusColor;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .hero-button {
+    font-weight: 700;
+    color: rgba(210, 210, 210, 0.864);
+    background-color: #2195f3c6;
+    padding: 10px 32px;
+    min-width: 216px;
+    border: 0;
+    border-radius: 4px;
+    transition-property: color ,background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+  &:hover {
+    color: white;
+    background-color: $focusColor;
+    transition-property: color ,background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+  }
+  }
+  .modal_submit-button{
+    border-radius: 4px;
+    border: none;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #2195f3ca;
+  color: rgba(239, 238, 238, 0.918);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  }
+  .modal_submit-button:hover{
+    background: #198dec;
+    color: white;
+  }
+  .close_button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: black;
+  }
+  .portfolio-button_list {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 56px;
+    &-item-button {
+      background-color: #f5f4fa;
+      border: 0;
+      padding: 6px 25px;
+      border-radius: 4px;
+      height: 38px;
+      transition-property: box-shadow, color, background-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    &-item-button:hover {
+      background-color: var(--focus-color);
+      color: white;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+      transition-property: box-shadow, color, background-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }  
+  }

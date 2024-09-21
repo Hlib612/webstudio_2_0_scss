@@ -8,32 +8,6 @@
     border-bottom: 1px solid #eee;
     padding: 20px 24px;
   }
-  .portfolio-button_list {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    justify-content: center;
-    margin-bottom: 56px;
-    &-item-button {
-      background-color: #f5f4fa;
-      border: 0;
-      padding: 6px 25px;
-      border-radius: 4px;
-      height: 38px;
-      transition-property: box-shadow, color, background-color;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
-    &-item-button:hover {
-      background-color: var(--focus-color);
-      color: white;
-      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-      transition-property: box-shadow, color, background-color;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }  
-  }
   .advertising-list {
     display: flex;
     flex-direction: row;
