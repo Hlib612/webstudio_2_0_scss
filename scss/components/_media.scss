@@ -1,0 +1,29 @@
+// Container
+@media screen and (min-width: 480px) {
+    .container{
+        width: 480px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .container{
+      width: 768px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .container{
+      width: 1200px;
+    }
+  }
+//   Header
+@media screen and (min-width: 1200px) {
+    .header-logo{
+        font-size: 26px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .address-list{
+        display: flex;
+        gap: 50px;
+    }
+  }
