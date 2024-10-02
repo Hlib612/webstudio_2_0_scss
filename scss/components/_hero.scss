@@ -11,14 +11,22 @@
             rgba(0, 0, 0, 0.534),
             rgba(229, 229, 229, 0.281)),
         url("../images/main/hero_background.jpg");
-    background-size: 1474px 600px;
+    background-size: 480px 480px;
     background-repeat: no-repeat;
     &-title {
       font-weight: 900;
-      font-size: 44px;
-      line-height: 136%;
+      font-size: 26px;
+      line-height: 162%;
       letter-spacing: 0.06em;
       color: $mainColor;
       margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    background-size: 768px 400px;
+    }
+      @media screen and (min-width: 1200px) {
+        line-height: 136%;
+        font-size: 44px;
+        background-size: 1474px 600px;
+  }
   }
 }

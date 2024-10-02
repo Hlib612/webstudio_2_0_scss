@@ -1,17 +1,25 @@
 footer {
-    display: flex;
-    justify-content: space-around;
     background-color: $backgroundColor;
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+    justify-content: space-around;
+    }
     &-logo {
       font-family: "Raleway", sans-serif;
       font-optical-sizing: auto;
+      text-align: center;
       font-weight: 700;
-      font-size: 26px;
+      font-size: 24px;
+      letter-spacing: 0.03em;
       color: $mainColor;
       display: inline-block;
       margin-bottom: 20px;
+      @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        text-align: none;
+    }
     }
     &-logo-span {
       color: $adresssColor;
@@ -22,6 +30,10 @@ footer {
     width: 230px;
     & > a {
       color: $adresssColor;
+      text-align: center;
+      @media screen and (min-width: 1200px) {
+        text-align: none;
+    }
     }
     &-item {
       font-weight: 400;
@@ -62,6 +74,10 @@ footer {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $mainColor;
+    text-align: center;
+      @media screen and (min-width: 1200px) {
+        text-align: none;
+    }
   }
   .subscribe_p {
     margin-bottom: 20px;
@@ -70,6 +86,10 @@ footer {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $mainColor;
+    text-align: center;
+      @media screen and (min-width: 1200px) {
+        text-align: none;
+    }
   }
   .subscribe_input {
     background-color: $backgroundColor;

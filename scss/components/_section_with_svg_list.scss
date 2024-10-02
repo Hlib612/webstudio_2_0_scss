@@ -1,14 +1,25 @@
 
 .section_with_svg_list-title{
   font-weight: 700;
-font-size: 36px;
+  font-size: 28px;
 letter-spacing: 0.03em;
 text-align: center;
 margin-bottom: 50px;
+@media screen and (min-width: 1200px) {
+  font-size: 36px;
+}
 }
 .section_with_svg_list-list{
     display: flex;
-    gap: $mainGap;
+    row-gap: 30px;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+      flex-wrap: wrap;
+    }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
     &-item{
       display: flex;
       justify-content: center;

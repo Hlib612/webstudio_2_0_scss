@@ -18,6 +18,9 @@
     font-size: 24px;
     color: black;
     margin-right: 93px;
+    @media screen and (min-width: 1200px) {
+          font-size: 26px;
+    }
   }
   &-span {
     color: $focusColor;
@@ -57,7 +60,6 @@
     margin-left: auto;
     align-items: center;
     font-weight: 500px;
-
     &-item{
       @include transition($textColor)
     }
@@ -69,6 +71,10 @@
       transition-property: fill;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+      @media screen and (min-width: 1200px) {
+            display: flex;
+            gap: 50px;
+      }
     }
     
     &-item:hover &-svg {
