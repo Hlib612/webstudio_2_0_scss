@@ -78,10 +78,14 @@
   }
   .portfolio-button_list {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 8px;
     justify-content: center;
     margin-bottom: 56px;
+    @media screen and (min-width: 768px) {
+      flex-wrap: nowrap;
+    }
     &-item-button {
       background-color: #f5f4fa;
       border: 0;
