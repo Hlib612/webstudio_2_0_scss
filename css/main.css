@@ -124,9 +124,22 @@ h2 {
           align-items: center;
   font-weight: 500;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .navigation-list {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navigation-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 86px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation-list {
+    margin-left: 92px;
   }
 }
 .navigation-list-item {
@@ -167,6 +180,40 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 500px;
+}
+@media screen and (max-width: 767px) {
+  .address-list {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .address-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 30px;
+  }
 }
 .address-list-item {
   color: #757575;
