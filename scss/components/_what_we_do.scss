@@ -1,4 +1,7 @@
 .what_we_do{
+  @media screen and (max-width: 1200px) {
+    display: none;
+}
   &_title{
     text-align: center;
     margin-bottom: 50px;
