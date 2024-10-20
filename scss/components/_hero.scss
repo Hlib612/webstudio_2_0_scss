@@ -1,7 +1,7 @@
 .hero {
     background-color: $backgroundColor;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     text-align: center;
     // height: 600px;
     // width: 1600px;
@@ -10,9 +10,29 @@
     background-image: linear-gradient(to right,
             rgba(0, 0, 0, 0.534),
             rgba(229, 229, 229, 0.281)),
-        url("../images/main/hero_background.jpg");
+        url("../images/main/mobile_fon.jpg");
     background-size: 480px 480px;
     background-repeat: no-repeat;
+    @media screen and (min-width: 768px) {
+      background-size: 768px 400px;
+      width: 768px;
+      height: 400px;
+      background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.534),
+            rgba(229, 229, 229, 0.281)),
+        url("../../images/main/tablet_fon.jpg");
+      }
+        @media screen and (min-width: 1200px) {
+          padding-top: 200px;
+    padding-bottom: 200px;
+          background-size: 1600px 600px;
+          width: 1600px;
+      height: 600px;
+      background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.534),
+            rgba(229, 229, 229, 0.281)),
+        url("../images/main/hero_background.jpg");
+    }
     &-title {
       font-weight: 900;
       font-size: 26px;
@@ -20,13 +40,9 @@
       letter-spacing: 0.06em;
       color: $mainColor;
       margin-bottom: 30px;
-  @media screen and (min-width: 768px) {
-    background-size: 768px 400px;
-    }
       @media screen and (min-width: 1200px) {
         line-height: 136%;
         font-size: 44px;
-        background-size: 1474px 600px;
   }
   }
 }
