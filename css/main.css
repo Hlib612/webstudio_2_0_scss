@@ -933,9 +933,17 @@ h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 30px;
+    row-gap: 30px;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advertising-list {
+    row-gap: 32px;
   }
 }
 .advertising-list-title {
@@ -952,6 +960,7 @@ h2 {
   color: #757575;
 }
 .advertising-list-item {
+  margin-bottom: 30px;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -960,6 +969,19 @@ h2 {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .advertising-list-item {
+    margin-bottom: 0px;
+    max-width: 354px;
+    max-height: 440px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advertising-list-item {
+    width: 1200px;
+    outline: 1px dashed yellow;
+  }
 }
 .advertising-list-item:hover {
   -webkit-box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -1164,7 +1186,7 @@ h2 {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-button_list-item-button:hover {
-  background-color: var(--focus-color);
+  background-color: #2196F3;
   color: white;
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
