@@ -1,112 +1,175 @@
-footer {
-    background-color: $backgroundColor;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    @media screen and (min-width: 768px) {
-      display: flex;
-    justify-content: space-around;
-    }
-    &-logo {
-      font-family: "Raleway", sans-serif;
-      font-optical-sizing: auto;
-      text-align: center;
-      font-weight: 700;
-      font-size: 24px;
-      letter-spacing: 0.03em;
-      color: $mainColor;
-      display: inline-block;
-      margin-bottom: 20px;
-      @media screen and (min-width: 1200px) {
-        font-size: 26px;
-        text-align: none;
-    }
-    }
-    &-logo-span {
-      color: $adresssColor;
-    }
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $backgroundColor;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-  address {
-    font-style: normal;
-    width: 230px;
-    & > a {
-      color: $adresssColor;
-      text-align: center;
-      @media screen and (min-width: 1200px) {
-        text-align: none;
-    }
-    }
-    &-item {
-      font-weight: 400;
-      color: $mainColor;
-      margin-bottom: 9px;
-    }
-    &-list-item:hover {
-      color: $focusColor;
-      cursor: pointer;
-    }
-    &-list-item:hover {
-      color: $focusColor;
-      cursor: pointer;
-    }
-    &-email,
-    .address-tel {
-      display: block;
-    }
-    &-email {
-      margin-bottom: 9px;
-    }
-    &-item:hover {
-      color: white;
-    }
-    &-email:hover {
-      color: white;
-    }
-  }
-  .join_div {
-    display: flex;
-    flex-direction: column;
-    margin-left: 70px;
-    margin-right: 93px;
-  }
-  .join_p {
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $mainColor;
+  &-logo {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
     text-align: center;
-      @media screen and (min-width: 1200px) {
-        text-align: none;
-    }
-  }
-  .subscribe_p {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    color: $mainColor;
+    display: inline-block;
     margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $mainColor;
-    text-align: center;
-      @media screen and (min-width: 1200px) {
-        text-align: none;
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      text-align: none;
     }
   }
-  .subscribe_input {
-    background-color: $backgroundColor;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    width: 358px;
-    height: 50px;
+  &-logo-span {
+    color: $focusColor;
   }
-  .subscribe_svg {
-    fill: rgba(238, 238, 238, 0.823);
-    transition-property: fill;
-    transition-duration: 250ms;
+}
+.address_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+  font-style: normal;
+  width: 230px;
+  & > a {
+    color: $adresssColor;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+      text-align: none;
+    }
+  }
+  &-item {
+    font-weight: 400;
+    color: $mainColor;
+    margin-bottom: 9px;
+  }
+  &-list-item:hover {
+    color: $focusColor;
+    cursor: pointer;
+  }
+  &-list-item:hover {
+    color: $focusColor;
+    cursor: pointer;
+  }
+  &-email,
+  .address-tel {
+    display: block;
+  }
+  &-email {
+    margin-bottom: 9px;
+  }
+  &-item:hover {
+    color: white;
+  }
+  &-email:hover {
+    color: white;
+  }
+}
+.join_div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  margin-right: 93px;
+}
+.join_p {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $mainColor;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: none;
+  }
+}
+.subscribe_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe_p {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $mainColor;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: none;
+  }
+}
+.subscribe_form {
+  margin-bottom: 20px;
+}
+.subscribe_input {
+  background-color: $backgroundColor;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 450px;
+  height: 50px;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+}
+.subscribe_svg {
+  fill: rgba(238, 238, 238, 0.823);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe_button:hover .subscribe_svg {
+  fill: white;
+  transition-property: fill;
+  @extend %transition;
+}
+.join-list_svg {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 60px;
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #42424f;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 0;
+    transition-property: background-color;
+    transition-duration: 400ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .subscribe_button:hover .subscribe_svg {
-    fill: white;
-    transition-property: fill;
-    @extend %transition;
+
+  &-link:hover {
+    width: 44px;
+    height: 44px;
+    background-color: $focusColor;
+    border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
+
+  &-svg {
+    fill: $mainColor;
+    transition-property: fill;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
