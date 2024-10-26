@@ -1,15 +1,7 @@
 .footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: $backgroundColor;
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
   &-logo {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
@@ -34,13 +26,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media screen and (min-width: 768px) {
+    width: 232px;
+  }
 }
 .address {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
   font-style: normal;
   width: 230px;
   & > a {
@@ -80,8 +74,13 @@
 .join_div {
   display: flex;
   flex-direction: column;
-  margin-left: 70px;
+  @media screen and (min-width: 768px) {
+    width: 206px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
   margin-right: 93px;
+}
 }
 .join_p {
   margin-bottom: 20px;
@@ -141,7 +140,6 @@
   display: flex;
   gap: 10px;
   justify-content: center;
-  margin-bottom: 60px;
   &-link {
     display: flex;
     align-items: center;
@@ -171,5 +169,18 @@
     transition-property: fill;
     transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.footer_wraper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 164px;
+    row-gap: 60px;
   }
 }
