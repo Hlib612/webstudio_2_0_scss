@@ -42,6 +42,8 @@
     text-align: center;
     @media screen and (min-width: 1200px) {
       text-align: none;
+      justify-content: start;
+  align-items: normal;
     }
   }
   &-item {
@@ -75,7 +77,7 @@
   display: flex;
   flex-direction: column;
   @media screen and (min-width: 768px) {
-    width: 206px;
+    width: 232px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
@@ -99,6 +101,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: normal;
+}
 }
 .subscribe_p {
   margin-bottom: 20px;
@@ -183,4 +189,8 @@
     column-gap: 164px;
     row-gap: 60px;
   }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    gap: 0px;
+}
 }
