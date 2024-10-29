@@ -147,7 +147,12 @@
         <h2 class="team-title">Наша команда</h2>
         <ul class="team-list">
           <li class="team-list-item">
-            <img src="./images/main/men_in_red.jpg" alt="man in glasses" width="270" class="team-list-img" />
+            <img src="./images/main/men_in_red.jpg" alt="man in glasses" class="team-list-img"
+            srcset="
+            ./images/main/men_in_red.jpg 270w, ./images/main/men_in_red_2x.jpg 540w,
+            team1_tablet_1x.jpg 354w, team1_tablet_2x.jpg 708w,
+            team1_phone_1x.jpg 450w, team1_phone_2x.jpg 900w"
+          sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 768px) 450px, 100vw" />
             <h3 class="team-list-name">Ігор Дем'яненко</h3>
             <p class="team-list-description">Product Designer</p>
             <ul class="team-list_svg">
