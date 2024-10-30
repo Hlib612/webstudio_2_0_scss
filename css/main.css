@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .subscribe_button:hover .subscribe_svg, .section_with_svg_list-list-item:hover .section_with_svg_list-list-svg, .section_with_svg_list-list-item:hover, .section_with_svg_list-list-svg, .section_with_svg_list-list-item {
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
@@ -34,6 +35,10 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+}
+
+body {
+  cursor: url("c:Users­minPicturesSaved Pictures\6.png"), auto;
 }
 
 .container {
