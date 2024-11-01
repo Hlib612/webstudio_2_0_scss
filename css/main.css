@@ -41,6 +41,10 @@ body {
   cursor: url("c:Users­minPicturesSaved Pictures\6.png"), auto;
 }
 
+main {
+  padding-top: 48px;
+}
+
 .container {
   width: 320px;
   padding: 0 15px;
@@ -91,6 +95,7 @@ h2 {
 }
 
 .header {
+  position: fixed;
   top: 0;
   left: 0;
   padding-top: 24px;
@@ -995,8 +1000,8 @@ h2 {
   top: 50%;
   left: 50%;
   padding: 40px;
-  min-width: 528px;
-  min-height: 582px;
+  min-width: 450px;
+  min-height: 609px;
   border-radius: 4px;
   background-color: rgb(255, 255, 255);
   -webkit-transform: translate(-50%, -50%) rotate(720deg) scale(1);
@@ -1007,6 +1012,12 @@ h2 {
   transition: color 300ms ease-in-out, -webkit-transform 300ms ease-in-out, -webkit-transform 600ms ease-in-out;
   transition: transform 300ms ease-in-out, color 300ms ease-in-out, transform 600ms ease-in-out;
   transition: transform 300ms ease-in-out, color 300ms ease-in-out, transform 600ms ease-in-out, -webkit-transform 300ms ease-in-out, -webkit-transform 600ms ease-in-out;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 582px;
+  }
 }
 .modal_label {
   display: -webkit-box;
@@ -1030,13 +1041,20 @@ h2 {
   border-color: #2196F3;
 }
 .modal_input {
-  padding: 11px 12px;
+  padding-left: 30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 448px;
+  width: 370px;
   height: 40px;
   width: 100%;
   outline: none;
+}
+@media screen and (min-width: 1200px) {
+  .modal_input {
+    width: 448px;
+  }
 }
 .modal_p {
   margin-bottom: 12px;
@@ -1047,12 +1065,19 @@ h2 {
   color: #212121;
 }
 .modal_textarea {
+  padding-left: 16px;
+  padding-top: 12px;
   margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 448px;
+  width: 370px;
   height: 120px;
   resize: none;
+}
+@media screen and (min-width: 1200px) {
+  .modal_textarea {
+    width: 448px;
+  }
 }
 .modal_input::-webkit-input-placeholder {
   padding: 11px 12px;
