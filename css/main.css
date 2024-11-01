@@ -284,8 +284,8 @@ h2 {
     background-size: 768px 400px;
     width: 768px;
     height: 400px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.534)), to(rgba(229, 229, 229, 0.281))), url("../../images/main/tablet_fon.jpg");
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.534), rgba(229, 229, 229, 0.281)), url("../../images/main/tablet_fon.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.534)), to(rgba(229, 229, 229, 0.281))), url("../images/main/tablet_fon.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.534), rgba(229, 229, 229, 0.281)), url("../images/main/tablet_fon.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
