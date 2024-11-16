@@ -11,7 +11,7 @@
             rgba(0, 0, 0, 0.534),
             rgba(229, 229, 229, 0.281)),
         url("../images/main/mobile_fon.jpg");
-    background-size: 480px 480px;
+    background-size: cover;
     background-repeat: no-repeat;
     @media screen and (min-width: 768px) {
       background-size: 768px 400px;
