@@ -13,6 +13,12 @@
         url("../images/main/mobile_fon.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url("../images/main/mobile_fon_2x.jpg");
+  }
     @media screen and (min-width: 768px) {
       background-size: 768px 400px;
       width: 768px;
@@ -21,7 +27,13 @@
             rgba(0, 0, 0, 0.534),
             rgba(229, 229, 229, 0.281)),
         url("../images/main/tablet_fon.jpg");
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url("../images/main/tablet_fon_2x.jpg");
       }
+    }
         @media screen and (min-width: 1200px) {
           padding-top: 200px;
     padding-bottom: 200px;
@@ -32,6 +44,12 @@
             rgba(0, 0, 0, 0.534),
             rgba(229, 229, 229, 0.281)),
         url("../images/main/hero_background.jpg");
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url("../images/main/hero_background_2x.jpg");
+      }
     }
     &-title {
       font-weight: 900;
