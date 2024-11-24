@@ -129,3 +129,9 @@
   text-decoration-skip-ink: none;
   color: $focusColor;
 }
+.close_button{
+  fill: black;
+}
+.close_button:hover{
+  fill: $focusColor;
+}
