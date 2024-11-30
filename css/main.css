@@ -276,8 +276,13 @@ h2 {
   margin-left: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.534)), to(rgba(229, 229, 229, 0.281))), url("../images/main/mobile_fon.jpg");
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.534), rgba(229, 229, 229, 0.281)), url("../images/main/mobile_fon.jpg");
-  background-size: 480px 480px;
+  background-size: cover;
   background-repeat: no-repeat;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/main/mobile_fon_2x.jpg");
+  }
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -286,6 +291,11 @@ h2 {
     height: 400px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.534)), to(rgba(229, 229, 229, 0.281))), url("../images/main/tablet_fon.jpg");
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.534), rgba(229, 229, 229, 0.281)), url("../images/main/tablet_fon.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/main/tablet_fon_2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -297,6 +307,11 @@ h2 {
     height: 600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.534)), to(rgba(229, 229, 229, 0.281))), url("../images/main/hero_background.jpg");
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.534), rgba(229, 229, 229, 0.281)), url("../images/main/hero_background.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/main/hero_background_2x.jpg");
   }
 }
 .hero-title {
@@ -1155,6 +1170,14 @@ h2 {
   color: #2196F3;
 }
 
+.close_button {
+  fill: black;
+}
+
+.close_button:hover {
+  fill: #2196F3;
+}
+
 .portfolio-title {
   color: rgb(255, 255, 255);
 }
@@ -1244,8 +1267,6 @@ h2 {
 
 .box {
   position: relative;
-  width: 370px;
-  height: 294px;
   background-color: aqua;
   overflow: hidden;
 }
@@ -1436,4 +1457,83 @@ h2 {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header_menu_button {
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .header_menu_button {
+    display: none;
+  }
+}
+.header_menu_button:hover {
+  background-color: rgba(167, 165, 165, 0.726);
+  border-radius: 50%;
+}
+
+.menu_button {
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  fill: currentColor;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.menu_button:hover {
+  background-color: gray;
+  color: white;
+}
+
+.menu_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(255, 196, 0);
+  padding: 32px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.menu_container.is_open {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.menu_list {
+  font-size: 26px;
+  background-color: #2196F3;
+  color: antiquewhite;
+}
+
+.menu_list_item {
+  margin-bottom: 34px;
 }/*# sourceMappingURL=main.css.map */
