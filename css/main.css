@@ -112,6 +112,10 @@ h2 {
   font-weight: 700;
   font-size: 24px;
   color: black;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 @media screen and (min-width: 1200px) {
   .header-logo {
@@ -120,6 +124,16 @@ h2 {
 }
 .header-span {
   color: #2196F3;
+}
+.header-logo:hover {
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 .navigation-list {
@@ -162,7 +176,8 @@ h2 {
 }
 .navigation-list-item:hover {
   cursor: pointer;
-  color: #2196F3;
+}
+.navigation-list-link {
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -182,6 +197,15 @@ h2 {
   width: 100%;
   height: 4px;
   background-color: #2F303A;
+}
+.navigation-list-link:hover {
+  color: #2196F3;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-list {
@@ -693,12 +717,26 @@ h2 {
   color: rgb(255, 255, 255);
   display: inline-block;
   margin-bottom: 20px;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 @media screen and (min-width: 1200px) {
   .footer-logo {
     font-size: 26px;
     text-align: none;
   }
+}
+.footer-logo:hover {
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 .footer-logo-span {
   color: #2196F3;
@@ -1512,12 +1550,19 @@ h2 {
 }
 
 .menu_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(255, 196, 0);
+  background-color: white;
   padding: 32px;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -1529,11 +1574,49 @@ h2 {
 }
 
 .menu_list {
-  font-size: 26px;
-  background-color: #2196F3;
-  color: antiquewhite;
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  color: #212121;
+  gap: 32px;
+  margin-bottom: 306px;
 }
 
 .menu_list_item {
   margin-bottom: 34px;
+}
+
+.menu_list_link {
+  font-weight: 500;
+  font-size: 34px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  margin-bottom: 32px;
+}
+
+.menu_list_mail {
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  margin-bottom: 64px;
+}
+
+.app_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.app_list_item_a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 122%;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.app_list_item_a:hover {
+  color: #145a93;
 }/*# sourceMappingURL=main.css.map */

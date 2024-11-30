@@ -17,13 +17,20 @@
     font-weight: 700;
     font-size: 24px;
     color: black;
-    // margin-right: 93px;
+    transition-duration: 1000ms;
+    transition-timing-function: ease;
     @media screen and (min-width: 1200px) {
           font-size: 26px;
     }
   }
   &-span {
     color: $focusColor;
+  }
+  &-logo:hover{
+    transition-delay: 500ms;
+    transform: scale(2);
+    transition-duration: 1000ms;
+    transition-timing-function: ease;
   }
   }
   .navigation-list {
@@ -50,7 +57,11 @@
     }
     &-item:hover {
       cursor: pointer;
-      @include transition($focusColor)
+    }
+    &-link{
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
     }
     &-link.curent{
       position: relative;
@@ -64,6 +75,9 @@
         width: 100%;
         height: 4px;
         background-color: $backgroundColor;
+      }
+      &-link:hover{
+        @include transition($focusColor)
       }
   }
   .address-list {

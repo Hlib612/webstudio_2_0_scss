@@ -12,11 +12,19 @@
     color: $mainColor;
     display: inline-block;
     margin-bottom: 20px;
+    transition-duration: 1000ms;
+    transition-timing-function: ease;
     @media screen and (min-width: 1200px) {
       font-size: 26px;
       text-align: none;
     }
   }
+  &-logo:hover{
+    transition-delay: 500ms;
+    transform: scale(2);
+    transition-duration: 1000ms;
+    transition-timing-function: ease;
+    }
   &-logo-span {
     color: $focusColor;
   }
