@@ -27,8 +27,9 @@
     color: $focusColor;
   }
   &-logo:hover{
+    transition-property: transform;
     transition-delay: 500ms;
-    transform: scale(2);
+    transform: scale(1.5);
     transition-duration: 1000ms;
     transition-timing-function: ease;
   }

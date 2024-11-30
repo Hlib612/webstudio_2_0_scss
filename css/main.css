@@ -126,10 +126,14 @@ h2 {
   color: #2196F3;
 }
 .header-logo:hover {
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
   -webkit-transition-delay: 500ms;
           transition-delay: 500ms;
-  -webkit-transform: scale(2);
-          transform: scale(2);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
   -webkit-transition-duration: 1000ms;
           transition-duration: 1000ms;
   -webkit-transition-timing-function: ease;
@@ -1566,6 +1570,7 @@ h2 {
   padding: 32px;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
+  z-index: 5;
 }
 
 .menu_container.is_open {
@@ -1573,17 +1578,34 @@ h2 {
           transform: translateX(0%);
 }
 
+.menu_list_close {
+  fill: black;
+}
+
+.menu_list_close:hover {
+  fill: #2196F3;
+}
+
 .menu_list {
   font-weight: 500;
   font-size: 40px;
   letter-spacing: 0.02em;
   color: #212121;
-  gap: 32px;
-  margin-bottom: 306px;
+  margin-bottom: 235px;
 }
 
 .menu_list_item {
   margin-bottom: 34px;
+}
+
+.menu_list_item:hover {
+  color: #2196F3;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu_list_link {
@@ -1592,6 +1614,22 @@ h2 {
   letter-spacing: 0.02em;
   color: #757575;
   margin-bottom: 32px;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu_list_link:hover {
+  color: #2196F3;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu_list_mail {
@@ -1600,6 +1638,22 @@ h2 {
   letter-spacing: 0.02em;
   color: #757575;
   margin-bottom: 64px;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu_list_mail:hover {
+  color: #2196F3;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .app_list {
