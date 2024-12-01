@@ -24,8 +24,8 @@
   }
   .hero-button {
     font-weight: 700;
-    color: rgba(210, 210, 210, 0.864);
-    background-color: #2195f3c6;
+    color: $mainColor;
+    background-color: $focusColor;
     padding: 10px 32px;
     min-width: 200px;
     border: 0;
@@ -37,8 +37,8 @@
     min-width: 216px;
 }
   &:hover {
-    color: white;
-    background-color: $focusColor;
+    color: $mainColor;
+    background-color: #1c7ac7;
     transition-property: color ,background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;

@@ -75,7 +75,7 @@
         border-radius: 2px;
         width: 100%;
         height: 4px;
-        background-color: $backgroundColor;
+        background-color: $mainColor;
       }
       &-link:hover{
         @include transition($focusColor)
