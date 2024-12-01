@@ -75,10 +75,19 @@
     margin-bottom: 9px;
   }
   &-item:hover {
-    color: white;
+    color: $mainColor;
   }
   &-email:hover {
-    color: white;
+    color: $mainColor;
+    transition-property: color;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+  }
+  &-tel:hover{
+    color: $mainColor;
+    transition-property: color;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
   }
 }
 .join_div {
